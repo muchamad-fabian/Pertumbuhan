@@ -1,0 +1,4 @@
+docker --version 
+    → cek Docker ada dan hidup
+docker run hello-world 
+    → buktiin Docker bisa dipakai beneran

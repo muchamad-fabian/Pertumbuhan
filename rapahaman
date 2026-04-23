@@ -1,0 +1,7 @@
+
+env = Environment (env) adalah lingkungan tempat program berjalan
+    contoh {
+    PORT=3000
+    DB_HOST=localhost
+    API_KEY=rahasia_banget
+    }

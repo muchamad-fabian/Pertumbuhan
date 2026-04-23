@@ -1,0 +1,13 @@
+- about docker CE (Graatis)
+
+1. Download dari:
+👉 https://www.docker.com/products/docker-desktop
+2. Install seperti biasa (next-next, ritual wajib umat manusia)
+3. Centang:
+   - Use WSL 2 instead of Hyper-V (kalau ada)
+4. Setelah install, buka Docker Desktop
+5. Tunggu sampai statusnya:
+   “Docker is running”
+6. Test di terminal:
+    docker --version
+    docker run hello-world

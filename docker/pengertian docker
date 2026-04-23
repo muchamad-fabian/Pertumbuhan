@@ -1,0 +1,30 @@
+- Docker sendiri platform untuk menjalankan aplikasi dalam bentuk container. Container ini berisi semua yang dibutuhkan aplikasi: code, library, dependency, sampai konfigurasi.
+    Bayangin kamu punya aplikasi Java. Biasanya kan butuh:
+    - JDK versi tertentu
+    - Library tambahan
+    - Setting environment
+Nah, Docker nge-pack semua itu jadi satu. Jadi tinggal jalanin tanpa peduli OS atau environment.
+
+countainer sebagai wadah ringan menjalankan projeck/ aplikasi
+- lebih ringan dari vm
+- starup cepat
+- konsisten di segala environment
+
+docker juga seperti app store/play store yang menyimpan beberapa image
+image(
+    Image = blueprint / template untuk bikin container
+
+    Anggap aja:
+    Image → cetakan
+    Container → hasil jadi
+
+    Misalnya:
+    ada image Node.js
+    dari situ kamu bikin container buat jalanin app
+
+    Jadi:
+    image itu paket berisi aplikasi + dependency + config
+); 
+Dalam sistem os sendiri kadang dipakai untuk:
+- disk image (ISO, IMG)
+  → semacam salinan utuh sistem
