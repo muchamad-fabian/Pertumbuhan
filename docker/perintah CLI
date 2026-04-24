@@ -1,4 +1,34 @@
+mongo:8:2
+
 docker --version 
     → cek Docker ada dan hidup
+
 docker run hello-world 
     → buktiin Docker bisa dipakai beneran
+
+docker container ls 
+    → cek container yang lagi jalan
+
+docker container ls -a
+    → cek semua container, termasuk yang berhenti 
+
+docker container start <container_id>
+    → hidupin container yang berhenti
+
+docker container stop <container_id>
+    → mati'in container yang lagi jalan
+
+docker container rm <container_id>
+    → hapus container yang berhenti 
+
+docker build --tag app-golang:0.1 .
+    → build image dari Dockerfile di direktori sekarang, kasih tag ( app-golang:0.1 <- nama image )
+
+docker image ls
+    → cek image yang udah dibuat
+
+docker container create --name app-golang -p 8080:8080 app-golang:0.1
+    → buat container dari image yang udah dibuat, kasih nama ( app-golang ) dan port mapping ( 8080:8080 )
+
+docker container start app-golang
+    → hidupin container yang baru dibuat

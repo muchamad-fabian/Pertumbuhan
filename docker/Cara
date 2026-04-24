@@ -1,0 +1,21 @@
+Dockerfile adalah file berisi kumpulan instruksi untuk membangun image di Docker.
+    Kalau tadi Docker itu “kotak”, Dockerfile itu resep masaknya. Tanpa resep, ya silakan improvisasi…
+    lalu heran kenapa hasilnya kacau.
+
+Fungsi utam Dockerfile
+    1. Menyimpan instruksi build image secara terstruktur dan otomatis.
+    2. Memudahkan kolaborasi dan reproduksi image yang konsisten.
+    3. Mempermudah deployment aplikasi dengan menyimpan semua dependensi dan konfigurasi dalam satu file.
+    4. Mempercepat proses build dengan caching layer yang efisien.
+
+Struktur Dasar Dockerfile
+    FROM node:18
+    WORKDIR /app
+    COPY . .
+    RUN npm install
+    CMD ["npm", "start"]
+1. FROM: Menentukan base image yang akan digunakan.
+2. WORKDIR: Menentukan direktori kerja di dalam container.
+3. COPY: Menyalin file atau direktori dari host ke dalam container.
+4. RUN: Menjalankan perintah untuk menginstal dependensi atau melakukan konfigurasi.
+5. CMD: Menentukan perintah yang akan dijalankan saat container dijalankan.

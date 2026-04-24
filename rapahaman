@@ -5,3 +5,29 @@ env = Environment (env) adalah lingkungan tempat program berjalan
     DB_HOST=localhost
     API_KEY=rahasia_banget
     }
+countainer = lingkungan terisolasi buat menjalankan aplikasi beserta semua kebutuhannya
+    Artinya:
+        aplikasi
+        library
+        dependency
+        config
+
+Dependency = sesuatu yang dibutuhkan program supaya bisa berjalan/ mengelola apa yang sudah siap
+    Biasanya berupa:
+        library
+        package
+        framework
+        tools tambahan
+
+Build = Dalam konteks Docker, build adalah proses untuk membuat image dari sebuah Dockerfile.
+    Jadi:
+        Dockerfile = resep
+        Build = proses masak
+        Image = hasil masakan
+Kalau resepnya kacau, ya hasilnya jangan berharap Michelin star.
+
+Rekursi = teknik di pemrograman di mana sebuah fungsi memanggil dirinya sendiri untuk menyelesaikan masalah.
+    Konsep dasar
+    Rekursi selalu punya 2 bagian:
+        Base case (kondisi berhenti) → biar gak jalan selamanya
+        Recursive case → bagian yang memanggil dirinya lagi

@@ -28,3 +28,4 @@ image(
 Dalam sistem os sendiri kadang dipakai untuk:
 - disk image (ISO, IMG)
   → semacam salinan utuh sistem
+dapat memmbuat dengan container yang lebih dari 1
