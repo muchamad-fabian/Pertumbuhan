@@ -31,3 +31,6 @@ Rekursi = teknik di pemrograman di mana sebuah fungsi memanggil dirinya sendiri 
     Rekursi selalu punya 2 bagian:
         Base case (kondisi berhenti) → biar gak jalan selamanya
         Recursive case → bagian yang memanggil dirinya lagi
+
+menghitung kompleksitas waktu suatu algoritma.
+T(n) = Σ (cost × time)

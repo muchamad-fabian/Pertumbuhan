@@ -1,0 +1,10 @@
+menghitung kompleksitas waktu suatu algoritma.
+    T(n) = Σ (cost × time)
+    - Arti tiap bagian
+        T(n) → total waktu eksekusi untuk input ukuran n
+        Σ (sigma) → penjumlahan dari semua langkah
+        cost → biaya tiap operasi (biasanya dianggap konstan, misal 1)
+        time → berapa kali operasi itu dijalankan
+    Intinya gimana?
+        Kita menjumlahkan semua operasi yang terjadi dalam program:
+        total waktu = (biaya 1 langkah) × (berapa kali dilakukan)
