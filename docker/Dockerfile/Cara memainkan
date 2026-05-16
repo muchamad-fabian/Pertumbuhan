@@ -1,0 +1,50 @@
+🔁 Ringkasan super singkat
+Dockerfile → build → run → stop → rm
+
+
+1. Siapkan project
+    📁 Struktur Project
+    project/
+       ├── main.go
+       └── Dockerfile
+
+🐳 Isi Dockerfile // bisa dibilang juga buat bild
+# Gunakan base image
+FROM golang:1.22
+
+# Set folder kerja di dalam container
+WORKDIR /app
+
+# Copy semua file ke container
+COPY . .
+
+# Inisialisasi module & build
+RUN go mod init app
+RUN go build -o main .
+
+# Jalankan aplikasi
+CMD ["./main"]
+
+
+⚙️ Langkah di Terminal VS Code
+1. Build image (( app-golang:0.1 <- nama image ))
+    docker build --tag app-golang:0.1 .
+2. Cek image
+    docker images
+3. Jalankan container
+    docker run -d -p 8080:8080 --name app-container app-go
+4. Cek container jalan
+    docker ps
+5. Stop container
+    docker stop app-container
+6. Hapus container
+    docker rm app-container
+7. Hapus image (opsional)
+    docker rmi app-go
+
+
+⚠️ Tips biar nggak nyalahin Docker terus
+**  Pastikan file main.go ada
+**  Jangan typo di CMD
+**  Port harus sesuai
+**  Kalau error aneh:**
